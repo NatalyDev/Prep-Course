@@ -1,0 +1,118 @@
+TAREA ESCRITA
+
+¿Que es una Variable?
+EJEMPLO
+
+//Oye Nat :D NOTA: Las variables pueden ser de varios tipos: String, Numbers o Booleans...Entre otros.
+
+var ciudad = "Maracaibo" //Variable de tipo String
+var edad = 670 //Variable de tipo numerica
+var esLaCiudadMasBella = true  //Variable de tipo Booleana, es decir true o false
+
+CONCEPTO: Una Variable es un espacio de la memoria que se designa para guardar datos.
+
+
+¿Qué es un String?
+
+EJEMPLO
+
+//Oye Nat :D  NOTA: Usar el ; en JS es opcional, no es algo oligatorio como en otros lengajes de programación.
+
+var nombre = 'Nataly';
+
+CONCEPTO: Un String son Bloques de textos, siempre deben de llevar comillas ya sean comillas dobles "" o comillas 
+Simples '', cualquier texto que se encuentre entre comillas es una Cadena o un String.
+
+
+
+¿Que es una Función?
+
+EJEMPLO
+
+function miFuncion (){
+    //Acá, dentro de la función es donde debe de ir el código
+}
+
+CONCEPTO: Una Función es un objeto invocable, por lo que tiene las mismas propiedades que cualquier objeto.
+
+
+¿Qués es un Argumento?
+
+EJEMPLO
+
+NOTA
+
+CONCEPTO
+
+¿Qué es un return?
+
+EJEMPLO
+
+//En este ejemplo podemos observar que tenemos una función, la cual nos solicita la suma
+de dos numeros (x, y), los cuales son guardados en la variable suma y por último queremos
+que nos retorne el valor de la suma de los dos números. 
+
+function suma(x, y) {
+  // "x" e "y" son números
+  // Suma "x" e "y" juntos y devuelve el valor
+  // Tu código:
+  
+  var suma = x + y
+  return suma 
+
+}
+
+NOTA: Es decir, que cuando usamos return estamos retornando un el resultado o un valor dado anteriormente.
+
+CONCEPTO: El uso del return (retorno) es la única forma en la que los datos escapan de una función.
+
+
+
+¿Declaraciones if?
+
+EJEMPLO
+
+function sonIguales(x, y) {
+  // Devuelve "true" si "x" e "y" son iguales
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  
+  // Igual ===  Doble Igual==  Distinto !==  Mayor >  Menor <   Menor o Igual <=   Mayor o Igual>=
+
+  if (x===y){
+    return true;
+}
+else{
+  return false
+  }
+}
+
+NOTA:
+
+CONCEPTO:
+
+
+
+¿Valores Booleanos (true, false)?
+
+EJEMPLO:
+
+function menosQueNoventa(num) {
+  // Devuelve "true" si el argumento de la función "num" es menor que noventa
+  // De lo contrario, devuelve "false"
+  // Tu código:
+
+  if (num<90){
+    return true;
+}
+else{
+  return false
+  }
+  
+}
+
+NOTA: En este ejemplo podemos observar como se usa el true y el false.
+
+CONCEPTO: En JS usamos Booleanos para darle el valor de true (verdadero) o false (falso). Los valores posibles
+de un dato boleano en JS son true o false.
+
