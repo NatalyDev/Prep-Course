@@ -1,0 +1,9 @@
+Explicación de Conceptos 
+
+¿Qué es "FOR"?
+
+¿Qué es "&&"?
+
+¿Qué es "||"?
+
+¿Qué es "!"?
