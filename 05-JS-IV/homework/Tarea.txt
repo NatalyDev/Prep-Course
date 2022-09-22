@@ -1,0 +1,81 @@
+                       ***TAREA ESCRITA***
+
+¿Qué es un objeto?
+
+Un objeto es una representación abstracta de
+ una cosa en la vida real. 
+ 
+Como por ejemplo un Automovil.
+*Tiene 4 Cauchos
+*Tiene 5 puertas
+*Es de color blanco
+*Es de Marca Mitsubishi
+
+Es este caso a nuestro objeto le podríamos poner **CARRO**
+
+**Propiedades de los objetos**
+
+Y cada una de las cosas/caracteristicas que mencionamos 
+anteriormente describen el **CARRO** como tal, conocemos a
+las Caraceristicas del objeo como: **PROPIEDADES**
+
+//En código de Javascript sería de la siguiente manera:
+
+let carro {  //Las llaves nos indican desde donde inicia
+    color:'Blanco',  //Se coloca entre comillas porque es un string
+    llantas: 4, //Es un número y va sin comillas
+    puertas: 5, //Es un número y va sin comillas
+    marca:'Mitsubishi' //Es un String y va dentro de comillas
+
+} //Hasta donde termina mi objeto
+
+//NOTA: Si tuvieramos algun valor booleano, colocaríamos TRUE O FALSE sin ''
+
+
+**¿CÓMO PODEMOS UTILIZAR LAS VARIABLES QUE SE ENCUENTRAN DENTRO DEL OBJETO?
+
+//Veamoslo con un ejemplo:
+
+carro.color //Nos retornaría BLANCO 
+carro.llantas //Nos retornaría 4
+carro.puertas //Nos retornaría 5
+carro.marca // Nos retornaría MITSUBISHI
+
+NOTA: Recordemos que los objeos son variables que dentro de si,tienen estos
+elementos que se llaman propiedades, en este caso: COLOR, LLANTAS, PUERTAS Y MARCA.
+
+Son como variables pero están como anexadas/amarradas a el objeto que en este caso sería CARRO.
+
+
+
+**Métodos**
+Las funciones guardadas en un objeto son **MÉTODOS**
+
+Hemos usado muchos métodos a lo largo del curso como por ejemplo:
+.length
+.push
+.pop
+.unshift
+.shift
+
+Podemos establecer una clave para un nombre y el valor para una función. Al igual que otras veces
+que llamamos métodos, llamaremos a este método usando notación de puntos y paréntesis finales.
+
+//EJEMPLO
+
+const nuevoObjeto = {  //Inicio de nuestro objeto
+    decirHola:function() {  //Esta es una función
+        console.log('Hola a todo el Mundo!'); //La cual contiene la impresión en pantalla de una frase
+    }
+} //Fin de nuestro objeto
+
+nuevoObjeto.decirHola(); //'Hola a todo el Mundo!'
+
+ //Al invocar el objeto.ElNombreDeLaFuncion nos va a impirmir lo que contiene la funcion, en este caso la frase
+
+
+**Bucles for...in**
+
+
+
+**Notación de Puntos vs Notación de corchetes**
