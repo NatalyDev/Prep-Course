@@ -219,7 +219,6 @@ function diaDeLaSemana(numeroDeDia) {
 5 ===> Jueves
 6 ===> Viernes
 7 ===> Sabado
-
 Fin de semana: 7 && 1
 */
 

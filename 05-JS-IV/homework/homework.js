@@ -126,7 +126,12 @@ function verificarPassword (usuario, password) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(password===usuario.password){
+/* **FORMAS DE LLAMAR A UNA PROPIEDAD DE UN OBJETO**
+Se puede hacer de esta forma: usuario.password
+Y tambien de esta forma: usuario['password']
+*/
+
+  if(password===usuario.password){ 
     return true;
   }
   else{
@@ -139,8 +144,14 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Devuelve el objeto
   // Tu código:
 
+  /* **IMAGINEMOS QUE TENEMOS ESTE OBJETO**
+var usuario ={
+  passwor:"Nataly"
+  */
 
-  
+usuario.password = nuevaPassword; //Primero va el objeto . Propiedad de dicho objeto
+return usuario;
+
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -148,6 +159,10 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+
+  usuario.amigos.push(nuevoAmigo);  /*Nat la syntaxis es: *OBJETO*.*PROPIEDAD*.*PUSH*(ARRAY A AÑADIR AL FINAL DEL ARRAY) */
+  return usuario;   //retornamos el usuario
+
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -156,6 +171,15 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+
+//Nat el array se llama: usuario --> [{esPemium}, {esPemium}, {esPemium}] *ESTO ES UN ARRAY*
+//                                    usuarios[i]
+
+for(var i=0; i < usuarios.length; i++){
+usuarios[i].esPremium = true; //usuarios en la posición de [i] *USUARIOS* por que nuestro *ARRAY* se llama así
+//usuarios[en la posicion de i].propiedad = Definimos que es true;
+}
+return usuarios;
 }
 
 function sumarLikesDeUsuario (usuario) {
@@ -165,6 +189,28 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+
+  /* NAT :) *USUARIO* es un *OBJETO* y tiene un propiedad llamada posts.
+  *POSTS* es un *ARRAY* de objetos *POST*
+
+  usuario.posts ---> [{likes:entero}, {likes:entero}, {likes:entero}] 
+
+  ESTO ES UN ARRAY LLAMADO *POSTS* que contiene dentro muchos *likes*
+
+  Entonces hay que recorer cada elemento del *ARRAY POSTS* y sumar todos los likes de los *POST*, es decir de los elemntos
+  
+ 
+               objeto.propiedad
+          */
+  var posts = usuario.posts; //Almacenamos todo nuesto array
+  var suma = 0; //Almacenamos la suma que vamos a ir haciendo de todo nuestro array
+
+for(var i = 0; i < posts.length; i++){
+  suma = suma + posts[i].likes;
+  //Suma va a ser igual a= Lo que tenga suma actualmete + lo que tenga posts en la posisicon de [i].likes
+ //De esta manera accedemos a cada valor dentro de array
+};
+return suma;
 }
 
 function agregarMetodoCalculoDescuento (producto) {
@@ -178,6 +224,12 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
 
+  producto.calcularPrecioDescuento = function(){ //Nat Así creamos un método, es decir, una Función :)
+    var descuento = producto.precio * producto.porcentajeDeDescuento
+    var precioConDescuento = producto.precio - descuento
+    return precioConDescuento;
+  }
+return producto;
 }
 
 // No modificar nada debajo de esta línea
