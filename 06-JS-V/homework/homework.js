@@ -8,12 +8,45 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+
+  class Usuario{ //Creamos la clase Usuario
+constructor(opciones){   //Sabemos que este método constructor va a tener {usuario, nombre, email, password}
+  this.usuario = opciones.usuario;
+  this.nombre = opciones.nombre;
+  this.email = opciones.email;
+  this.password = opciones.password;
+  this.saludar = function (){ //ESTO ES UN MÉTODO
+    return 'Hola, mi nombre es ' + this.nombre;
+  //Otra forma: return 'Hola, mi nombre es ${this.nombre}';
+  }
+}
+  }
+  return Usuario;
+  /*Otra forma sería:
+              *NO COLOCAR ESTO:*
+
+  this.saludar = function (){ //ESTO ES UN MÉTODO
+    return 'Hola, mi nombre es ' + this.nombre;
+    
+    *Y COLOCAR AQUI EN DONDE ESTA ---> return Usuario;*
+
+                     *ESTO*
+
+    Usuario.prototype.saludar = function(){
+    return 'Hola, mi nombre es ' + this.nombre;
+    }
+    return Usuario
+    */
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+
+Constructor.prototype.saludar = function (){
+  return "Hello World!"
+}
 }
 
 function agregarStringInvertida() {
