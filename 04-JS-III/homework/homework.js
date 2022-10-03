@@ -127,7 +127,7 @@ function promedioResultadosTest(resultadosTest) {
   /* :) NAT EXPLICACIÓN DEL FOR :)
   Creamos la variables i=0
   Mientras i sea < al largo de resultadosTest.length va a seguir recorriendo
-  Y po cada iteración le vamos a sumar 1 a i
+  Y por cada iteración le vamos a sumar 1 a i
   */
   var longitudArray = resultadosTest.length; //Nos va a devolver la cantidad de iteraciones que se hicieron
   var suma = 0;
